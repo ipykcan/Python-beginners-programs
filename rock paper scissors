@@ -1,0 +1,28 @@
+#This is how you can create and play a rock,paper,scissors game in Python.
+import random
+userchoice = input("Enter your choice:")
+options = ['rock' , 'paper' , 'scissors']
+compchoice = random.choice(options)
+print("computer choice was:",compchoice)
+
+if compchoice == userchoice:
+    print("it's a tie")
+
+elif compchoice == 'rock' and userchoice == 'paper':
+    print("You win")
+
+elif compchoice == 'rock' and userchoice == 'scissors':
+    print("You lose")
+
+elif compchoice == 'paper' and userchoice == 'rock':
+    print("You lose")
+
+elif compchoice == 'paper' and userchoice == 'scissors':
+    print("You win")
+
+elif compchoice == 'scissors' and userchoice == 'paper':
+    print("You lose")
+
+elif compchoice == 'scissors' and userchoice == 'rock':
+    print("You win")
+
