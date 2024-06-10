@@ -1,0 +1,28 @@
+I made two versions of this game.
+
+
+#Version1 (Asks to guess number only one time.)
+from random import*
+usernum = eval(input("Enter a number between 1 to 10:"))
+compnum = randint(1,10)
+if usernum==compnum:
+    print("You guessed the right number.Great!!")
+else:
+    print("oops try again :)")
+
+
+
+#Version2 (Asks to guess number until user gets the right number and also tells how high or low they are to the number.)
+from random import*
+usernum = eval(input("Enter a number between 1 to 10:"))
+compnum = randint(1,10)
+while usernum!=compnum:
+    if usernum>compnum:
+        print("try liittle low")
+        usernum = eval(input("Enter a number between 1 to 10:"))
+    elif usernum<compnum:
+        print("try little high")
+        usernum = eval(input("Enter a number between 1 to 10:"))
+    else:
+        break
+print("You guessed the right number.")   
