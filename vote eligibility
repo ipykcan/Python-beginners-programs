@@ -1,0 +1,7 @@
+#vote eligibility checking code
+
+age = eval(input("Enter your age:"))
+if age>=18:
+    print("You are ready to cast your vote.")
+else:
+    print("You can't vote.")
