@@ -1,0 +1,16 @@
+#Quiz in python.
+ques =["How many rings appear on the Olympic flag?",
+       "What is the atomic sign for Helium on the periodic table?",
+       "In which country is the Taj Mahal situated?",
+       "Which planet is the 3rd closest to the sun?",
+        "Which is the hardest substance available on earth?"]
+ans = ["Five","He","India","Earth","Diamond"]
+num_right =0
+for i in range(len(ques)):
+     guess = input(ques[i])
+     if guess.lower()==ans[i].lower():
+        print("Your answer is correct. congrats!!")
+        num_right+=1
+     else:
+         print("Your answer is wrong. The right answer is",ans[i])
+print("You have guessed",num_right,"correct.")
