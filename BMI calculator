@@ -1,0 +1,20 @@
+mass = eval(input("Enter your weight(kg):"))
+height = eval(input("Enter your height(cm):"))
+BMI = (mass/(height)**2)*10000
+print(BMI)
+if BMI<16:
+    print("Severe Thinness")
+elif 16<BMI<17:
+    print("Moderate Thinness")
+elif 17<BMI<18.5:
+    print("Mild Thinness")
+elif 18.5<BMI<25:
+    print("Normal")
+elif 25<BMI<30:
+    print("Overweight")
+elif 30<BMI<35:
+    print("Obese Class 1")
+elif 35<BMI<40:
+    print("Obese Class 2")
+else:
+    print("Obese Class 3")
