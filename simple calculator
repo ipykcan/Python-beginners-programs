@@ -1,0 +1,15 @@
+num1 = eval(input("Enter a number:"))
+num2 = eval(input("Enter a number:"))
+print(  "1. Add\n"
+        "2. Subtract\n"
+        "3. Multiply\n"
+        "4. Divide\n")
+opt = eval(input("Pls select the operation number: "))
+if opt == 1:
+    print(num1+num2)
+elif opt == 2:
+    print(num1-num2)
+elif opt == 3:
+    print(num1*num2)
+elif opt == 4:
+    print(num1/num2)
