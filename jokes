@@ -1,0 +1,9 @@
+from random import choice
+jokes = ["What do you call a fake noodle? An impasta.","How does NASA organize a party? They planet.","What kind of bow can’t be tied? A rainbow.",
+    "Have you heard the rumor about butter? Never mind, I shouldn’t be spreading it","Where does the sheep go to get a haircut? The baa baa shop."]
+print("Do you to hear a joke??")
+user_input = input("Yes/No:")
+if user_input == "yes" or user_input == "Yes":
+    print(choice(a))
+else:
+    print("Okay fine :(")
