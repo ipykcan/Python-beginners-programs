@@ -1,0 +1,27 @@
+from pygame import mixer
+mixer.init()
+mixer.music.load("music.wav")
+mixer.music.play()
+
+print("Press 'p' to pause")
+print("Press 'r' to resume")
+print("Press 'e' to exit")
+
+while True:
+    
+    user_mode=input(" Type mode:")
+
+    if user_mode =='p':
+        
+        mixer.music.pause()
+    
+    elif user_mode == 'r':
+        
+        mixer.music.unpause()
+    
+    elif user_mode == 'e':
+        
+        mixer.music.stop()
+        break
+
+        
