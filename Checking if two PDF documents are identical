@@ -1,0 +1,24 @@
+import hashlib
+from difflib import SequenceMatcher
+def hashables(file1,file2):
+    hashable1 = hashlib.sha1()
+    hashable2 = hashlib.sha1()
+    
+    with open(file1,'rb') as file:
+        partition = 0
+        while partition !=b'':
+            partition = file.read(1024)
+            hashable1.update(partition)
+
+    with open(file2,'rb') as file:
+        partition=0
+        while partition !=b'':
+            partition = file.read(1024)
+            hashable2.update(partition)
+    return hashable1.hexdigest() , hashable2.hexdigest()
+
+fileName1,fileName2=hashables("file1.txt","file2.txt")
+if fileName1==fileName2:
+    print("Contents of both the files are same.")
+else:
+    print("Both files are same.")
